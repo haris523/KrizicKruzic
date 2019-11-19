@@ -1,0 +1,183 @@
+.wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("hd-background-images-color-blue.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    color: white;
+}
+.igrica{
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    left: 35%;
+    right: 35%;
+    background-color: white;
+}
+.tabela{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: solid black 2px;
+    font-size: 6vw;
+    text-align: center;
+}
+.tabela tr{
+position: relative;
+height: 33%;
+width: 100%;
+border: solid black 2px;
+}
+.tabela tr>td{
+    position: relative;
+    width: 33%;
+    border: solid black 2px;
+}
+.score{
+    width: 20%;
+    height: 11%;
+    position: absolute;
+    top: 13%;
+    background-color: white;
+    left: 35%;
+    right: 40%;
+    border: solid black 2px;
+    text-align: center;
+}
+.scoreList{
+    border: solid black 2px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.scoreList>tr{
+    border: solid black 2px;
+    height: 50%;
+    width: 100%;
+    position: relative;
+}
+.scoreList tr>td{
+    text-align: center;
+}
+#podaci{
+    display: none;
+    background: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 30%;
+    width: 20%;
+    height: 15%;
+    left: 40%;
+    z-index:999;
+    color: white;
+    text-align: center;
+}
+#potez{
+    position: absolute;
+    width: 30%;
+    height: 8%;
+    bottom: 15%;
+    text-align: center;
+    background-color: white;
+    font-size: 2vw;
+    border: 2px solid black;
+    left: 35%;
+}
+#komande{
+    display: block;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top:13%;
+    left: 55%; 
+    border: 2px solid black;
+}
+#komande button{
+    width: 100%;
+}
+.donje{
+    margin-top: 1%;
+}
+#x{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 7%;
+    height: 15%;
+    cursor: pointer;
+}
+#x:hover{
+    background-color: red;
+}
+#pl1,#pl2{
+    cursor: pointer;
+}
+#help{
+    position: absolute;
+    display: none;
+    width: 32%;
+    max-height: 80%;
+    top: 10%;
+    bottom: 10%;
+    left: 34%;
+    right: 34%;
+    z-index:999;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    border-radius: 5%;
+    text-align: center;
+    font-size: 1.3vw;
+}
+#potvrdi{
+    width: 50%;
+    height: 5%;
+    background-color: rgb(7, 75, 7);
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    bottom: 2%;
+    color: white;
+}
+#content{
+    position: absolute;
+    top: 1%;
+    bottom: 5%;
+    left: 5%;
+    right: 5%;
+    
+}
+.text_help
+{
+    padding:2%;
+    padding-right: 4%;
+    overflow-y: auto; 
+    height: 75%;
+    text-align: justify;
+    
+}
+img{
+   max-width: 100%;
+   margin: 4%;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(255,0,0,0.5);
+    -webkit-box-shadow: inset 0 0 6px rgba(255,0,0,0.5); 
+}

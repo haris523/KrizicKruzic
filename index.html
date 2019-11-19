@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+    <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Tic tac toe</title>
+    </head>
+    <body onload="snimljenoIme()">
+        <div class="wrapper">
+            <center><h1>Tic tac toe</h1></center>  
+           <!-- <div id="informacija">
+                <button onclick="PromijeniIme1()">Promijeni ime P1</button>
+                <input type="text" id="player1">
+                <button onclick="PromijeniIme2()">Promijeni ime P2</button>
+                <input type="text" id="player2">
+                <button onclick="Ocisti()">Ocisti</button>
+            </div>-->
+            <div id="podaci">
+                <h2>Unesite novo ime</h2>
+                <input type="text" id="box" maxlength="20">
+                <button id="ok" onclick="zatvori()">Spremi</button>
+                <div id="x" onclick="Cancel()">
+                  X
+                </div>
+            </div>
+            <div id="help">
+                <div id="content">
+                        <h2>Tic tac toe</h2>
+                    <div class="text_help">
+                            
+                            <p>
+                                 Tic tac toe igra se na praznom polju 3x3. Igrač 1 postavlja kružiće, a igrač 2 križiće. Počevši od igrača s kružićem, igrači naizmjenično odabiru prazna polja i unutar njih crtaju svoj znak. Igrač pobjeđuje kada ostvari 3 svoja znaka uzastopno u nekom redu, stupcu, glavnoj ili sporednoj dijagonali. Ako to ne uspije niti jednom igraču, igra završava neriješeno.
+                                 Ime igrača koji je na potezu, označeno je zelenom bojom.
+                            </p>
+                            <p>
+                                Na početku igre, postavljena su imena Player 1 i Player 2.
+                            </p>
+                            <center><img src="Capture.PNG" alt="" id="slika"></center>
+                            Ime je moguće promijeniti klikom na ime igrača. Nakon klika se otvara prozor 
+                             <center><img src="ime.PNG" alt=""></center>
+                             U ovaj prozor kucamo željeno ime i klikom na dugme spremi, naše ime se sprema.
+                             <br><br>
+                              
+                    </div>
+                        
+                    <button id="potvrdi" onclick="PotvrdiPomoc()">OK</button>     
+                </div> 
+                    
+            </div>
+            <div id="komande">
+             <button onclick="RestartujIgru()">Započni novu</button>
+             <button onclick="RestartujSkor()" class="donje">Resetuj score</button>
+             <button onclick="Ocisti();Vrati()" class="donje">Defaultna imena</button>
+             <button onclick="Pomoc()" class="donje">Help</button>
+            </div>
+           <!--<input type="text" id="parnepar" value="0">-->
+            <div class="score">
+                <table class="scoreList">
+                    <tr>
+                        <th id="pl1" onclick="Izleti(this)" width="50%">Player 1</th>
+                        <th id="pl2" onclick="Izleti(this)" width="50%">Player 2</th>
+                    </tr>
+                    <tr>
+                            <td id="prvi">0</td>
+                            <td id="drugi">0</td>
+                    </tr>
+                </table>
+            </div>
+         <div class="igrica">
+             <table class="tabela" id="tabela" onclick="Potez()">
+                 <tr>
+                   <td id="p1" value="0" class="td" onclick="uzmiVrijednost(this)"> </td>
+                   <td id="p2" value="0" class="td" onclick="uzmiVrijednost(this)"> </td>
+                   <td id="p3" value="0" class="td" onclick="uzmiVrijednost(this)"> </td>
+                 </tr>
+                 <tr>
+                        <td id="p4" value="0" class="td" onclick="uzmiVrijednost(this)"> </td>
+                        <td id="p5" value="0" class="td" onclick="uzmiVrijednost(this)"> </td>
+                        <td id="p6" value="0" class="td" onclick="uzmiVrijednost(this)"> </td>
+
+                 </tr>
+                 <tr>
+                        <td id="p7" value="0" class="td" onclick="uzmiVrijednost(this)"> </td>
+                        <td id="p8" value="0" class="td" onclick="uzmiVrijednost(this)"> </td>
+                        <td id="p9" value="0" class="td" onclick="uzmiVrijednost(this)"> </td>
+
+                 </tr>
+             </table>
+         </div>
+         <div id="potez" >
+            
+         </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
