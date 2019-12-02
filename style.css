@@ -4,9 +4,10 @@
     position: absolute;
     left: 0;
     top: 0;
-    background-image: url("hd-background-images-color-blue.jpg");
+    /*background-image: url("hd-background-images-color-blue.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
+    background-color: #c77b75;
     font-family: 'Roboto', sans-serif;
 }
 h1{
